@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+<log location="C:\tech_journal\test5" history="24">
+	<event>
+		<eq property="Name" value="EXCP"/>
+		<eq property="p:processName" value="test5"/>
+	</event>
+	<event>
+		<eq property="Name" value="PROC"/>
+		<eq property="p:processName" value="test5"/>
+	</event>
+	 <event>
+		<eq property="Name" value="ADMIN"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="CONN"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="SESN"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="CLSTR"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="SRVC"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="DBMSSQL"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+	 <event>
+		<eq property="Name" value="SDBL"/>
+		<eq property="p:processName" value="test5"/>
+	 </event>
+<property name="all"/>
+</log>
+</config>

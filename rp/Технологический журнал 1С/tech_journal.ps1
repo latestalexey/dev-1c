@@ -1,0 +1,1 @@
+ Get-ChildItem -Path .\test5 -Recurse -File | Get-Content | Set-Content -Path .\AllLogs.txt

@@ -1,0 +1,10 @@
+[System.Text.Encoding]::Unicode.GetString([System.Convert]::FromBase64String(''))
+
+[Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes(''))
+
+[System.Convert]::FromBase64String("OTM1MDI0ODpxajRnTFN6NA==") | foreach{"{0:x}" -f $_}
+
+Get-PackageSource
+[Reflection.Assembly]::LoadFile('D:\testNuGet\YouTrackSharp.3.3.0\lib\netstandard1.3\YouTrackSharp.dll')
+
+($youtrack.issueCompacts.issue.field | ?{$_.name -eq 'description'}).value[4]

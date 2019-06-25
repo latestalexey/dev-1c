@@ -1,0 +1,33 @@
+Сброс пароля пользователя 1С (для ИБ на SQL Server). На примере базы "sto_bp_orlyak".
+
+1. Закрыть базу 1С.
+
+2. Выплинть sql-скрипт в Management Studio:
+
+USE [sto_bp_orlyak]
+GO
+EXEC sp_rename 'v8users', 'v8users_tmp'
+GO
+UPDATE [Params]
+SET [FileName] = 'users.usr_tmp'
+WHERE [FileName] = 'users.usr'
+GO
+
+3. Войти в конфигуратор. Запроса имени пользователя и пароля не будет.
+
+4. Выплинть sql-скрипт в Management Studio:
+
+USE [sto_bp_orlyak]
+GO
+DROP TABLE [v8users]
+GO
+EXEC sp_rename 'v8users_tmp', 'v8users'
+GO
+UPDATE [Params]
+SET FileName = 'users.usr'
+WHERE FileName = 'users.usr_tmp'
+GO
+
+5. В конфигураторе открыть раздел управления пользователями. Изменить пароль.
+
+6. Конец.

@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<FR_Config><ConnectionParameters Manufacturer="ShtrihM" Model="" Interface="Ethernet" InterfaceAddress="192.168.19.201" PortNumber="7778" Speed="115200" Component="smDrvFR1CLib24.dll" ProgID="SMDrvFR1C22" AdminPass="30" UserPass="0" ManyUsers="0"/><OperationParameters TaxSystem="0" FFD105="1" NoneTax="0" BarcodeType="" PrintBarcode="0" Barcode=""/></FR_Config>

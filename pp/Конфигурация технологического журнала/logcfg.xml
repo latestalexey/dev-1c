@@ -1,0 +1,72 @@
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+	<log location="D:\TJ\Logs" history="1">
+		<event>
+			<eq property="name" value="call"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="excp"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="attn"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="conn"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="excpcntx"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="leaks"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="dbmssql"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="mem"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="scriptcircrefs"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="proc"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="qerr"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="scom"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="sdbl"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="tdeadlock"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<event>
+			<eq property="name" value="ttimeout"/>
+			<eq property="p:processName" value="ut_test"/>
+		</event>
+		<property name="all"/>
+	</log>
+	<dump location="D:\TJ\Dumps" create="1" type="3" prntscrn="1"/>
+	<leaks collect="1">
+		<point call="client"/>
+		<point call="server"/>
+	</leaks>
+	<mem/>
+	<scriptcircrefs/>
+</config>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://v8.1c.ru/v8/tech-log">
+<log location="C:\tech_journal\test5" history="24">
+	<event>
+		<ne property="name" value=""/>
+		<eq property="p:processName" value="test5"/>
+	</event>
+    <property name="all"></property>
+</log>
+<dump location="C:\tech_journal\dump" create="1" type="3" />
+</config>
